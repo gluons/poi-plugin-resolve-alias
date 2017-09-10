@@ -2,6 +2,12 @@
 
 Use your custom [resolve alias](https://webpack.js.org/configuration/resolve/#resolve-alias) in [Poi](https://github.com/egoist/poi).
 
+## Why?
+
+**Poi** provides `@` as alias to the path to `src` folder.
+
+But if you want the alias to the folder outside `src` folder, use this.
+
 ## Installation
 
 > **Requirement:** You need to install [Poi](https://github.com/egoist/poi) first.

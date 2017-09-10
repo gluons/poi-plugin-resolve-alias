@@ -1,0 +1,36 @@
+{
+  "name": "poi-preset-resolve-alias",
+  "version": "1.0.0",
+  "description": "Use your custom resolve alias in Poi.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "poi test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gluons/poi-preset-resolve-alias.git"
+  },
+  "keywords": [
+    "poi",
+    "poi-preset",
+    "preset",
+    "webpack",
+    "resolve",
+    "alias"
+  ],
+  "author": "Saran Tanpituckpong <sarunta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gluons/poi-preset-resolve-alias/issues"
+  },
+  "homepage": "https://github.com/gluons/poi-preset-resolve-alias",
+  "peerDependencies": {
+    "poi": "9"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-gluons": "^2.0.2",
+    "poi": "^9.3.5"
+  }
+}

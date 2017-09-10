@@ -1,4 +1,7 @@
 # poi-preset-resolve-alias
+[![license](https://img.shields.io/github/license/gluons/poi-preset-resolve-alias.svg?style=flat-square)](./LICENSE)
+[![npm](https://img.shields.io/npm/v/poi-preset-resolve-alias.svg?style=flat-square)](https://www.npmjs.com/package/poi-preset-resolve-alias)
+[![npm](https://img.shields.io/npm/dt/poi-preset-resolve-alias.svg?style=flat-square)](https://www.npmjs.com/package/poi-preset-resolve-alias)
 
 Use your custom [resolve alias](https://webpack.js.org/configuration/resolve/#resolve-alias) in [Poi](https://github.com/egoist/poi).
 

@@ -2,6 +2,7 @@
 [![license](https://img.shields.io/github/license/gluons/poi-plugin-resolve-alias.svg?style=flat-square)](./LICENSE)
 [![npm](https://img.shields.io/npm/v/poi-plugin-resolve-alias.svg?style=flat-square)](https://www.npmjs.com/package/poi-plugin-resolve-alias)
 [![npm](https://img.shields.io/npm/dt/poi-plugin-resolve-alias.svg?style=flat-square)](https://www.npmjs.com/package/poi-plugin-resolve-alias)
+[![Travis](https://img.shields.io/travis/gluons/poi-plugin-resolve-alias.svg?style=flat-square)](https://travis-ci.org/gluons/poi-plugin-resolve-alias)
 
 Use your custom [resolve alias](https://webpack.js.org/configuration/resolve/#resolve-alias) in [Poi](https://poi.js.org/).
 

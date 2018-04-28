@@ -1,26 +1,27 @@
-const path = require('path');
-
 /**
  * Transform raw aliases to array of alias with resolved path.
  *
- * @param {object} aliasMap Raw aliases.
- * @param {string} cwd Current working directory.
+ * @param {{ [name: string]: string }} aliasMap Raw aliases.
  * @returns Array of alias.
  */
-function transformAlias(aliasMap, cwd = process.cwd()) {
+function transformAlias(aliasMap) {
 	return Object.keys(aliasMap).map(aliasName => {
 		return {
 			name: aliasName,
-			path: path.resolve(cwd, aliasMap[aliasName])
+			path: aliasMap[aliasName]
 		};
 	});
 }
 
+/**
+ * Add webpack `resolve.alias` into Poi.
+ *
+ * @param {{ [name: string]: string }} aliases Aliases.
+ */
 module.exports = (aliases = {}) => poi => {
-	let cwd = poi.options.cwd;
-	let aliasList = transformAlias(aliases, cwd);
+	let aliasList = transformAlias(aliases);
 
-	poi.extendWebpack(config => {
+	poi.chainWebpack(config => {
 		aliasList.forEach(alias => {
 			config.resolve.alias
 				.set(alias.name, alias.path);

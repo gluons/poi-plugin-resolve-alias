@@ -1,8 +1,13 @@
+const testPlugin = require('./lib/testPlugin');
+
+const aliases = {
+	'@lib': './lib',
+	'@assets': './assets'
+};
+
 module.exports = {
-	presets: [
-		require('./')({
-			'@lib': './lib',
-			'@assets': './assets'
-		})
+	plugins: [
+		require('./')(aliases),
+		testPlugin({ aliases })
 	]
 };

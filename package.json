@@ -14,7 +14,9 @@
   "keywords": [
     "poi",
     "poi-preset",
+    "poi-plugin",
     "preset",
+    "plugin",
     "webpack",
     "resolve",
     "alias"

@@ -1,5 +1,5 @@
 {
-  "name": "poi-preset-resolve-alias",
+  "name": "poi-plugin-resolve-alias",
   "version": "1.0.1",
   "description": "Use your custom resolve alias in Poi.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gluons/poi-preset-resolve-alias.git"
+    "url": "git+https://github.com/gluons/poi-plugin-resolve-alias.git"
   },
   "keywords": [
     "poi",
@@ -24,9 +24,9 @@
   "author": "Saran Tanpituckpong <sarunta@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gluons/poi-preset-resolve-alias/issues"
+    "url": "https://github.com/gluons/poi-plugin-resolve-alias/issues"
   },
-  "homepage": "https://github.com/gluons/poi-preset-resolve-alias",
+  "homepage": "https://github.com/gluons/poi-plugin-resolve-alias",
   "peerDependencies": {
     "poi": "10"
   },

@@ -31,10 +31,10 @@
     "poi": "10"
   },
   "devDependencies": {
-    "chai": "*",
-    "chalk": "^2.4.1",
-    "eslint": "^4.6.1",
-    "eslint-config-gluons": "^3.0.0",
+    "chai": "4.2.0",
+    "chalk": "^2.4.2",
+    "eslint": "^6.1.0",
+    "eslint-config-gluons": "^5.0.0",
     "poi": "^10.1.5",
     "success-symbol": "^0.1.0"
   }

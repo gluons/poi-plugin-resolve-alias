@@ -6419,11 +6419,6 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-success-symbol@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/success-symbol/-/success-symbol-0.1.0.tgz#24022e486f3bf1cdca094283b769c472d3b72897"
-  integrity sha1-JAIuSG878c3KCUKDt2nEctO3KJc=
-
 superstruct@^0.6.0:
   version "0.6.1"
   resolved "https://registry.npmjs.org/superstruct/-/superstruct-0.6.1.tgz#148fc3d627bb59fcfe24aa1bd2a1b8c51b1db072"

@@ -1,7 +1,7 @@
 /**
  * Transform raw aliases to array of alias with resolved path.
  *
- * @param {{ [name: string]: string }} aliasMap Raw aliases.
+ * @param {Record<string, string>} aliasMap Raw aliases.
  * @returns Array of alias.
  */
 function transformAlias(aliasMap) {
@@ -14,17 +14,21 @@ function transformAlias(aliasMap) {
 }
 
 /**
+ * Plugin name.
+ */
+exports.name = 'resolve-alias';
+/**
  * Add webpack `resolve.alias` into Poi.
  *
- * @param {{ [name: string]: string }} aliases Aliases.
+ * @param {import('poi')} api Poi instance.
+ * @param {Record<string, string>} aliases Aliases.
  */
-module.exports = (aliases = {}) => poi => {
-	let aliasList = transformAlias(aliases);
+exports.apply = (api, aliases) => {
+	const aliasList = transformAlias(aliases);
 
-	poi.chainWebpack(config => {
+	api.hook('createWebpackChain', config => {
 		aliasList.forEach(alias => {
-			config.resolve.alias
-				.set(alias.name, alias.path);
+			config.resolve.alias.set(alias.name, alias.path);
 		});
 	});
 };

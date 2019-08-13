@@ -1,4 +1,4 @@
-const testPlugin = require('./lib/testPlugin');
+const { resolve } = require('path');
 
 const aliases = {
 	'@lib': './lib',
@@ -7,7 +7,13 @@ const aliases = {
 
 module.exports = {
 	plugins: [
-		require('./')(aliases),
-		testPlugin({ aliases })
+		{
+			resolve: resolve(__dirname, './index.js'),
+			options: aliases
+		},
+		{
+			resolve: resolve(__dirname, './lib/testPlugin.js'),
+			options: aliases
+		}
 	]
 };

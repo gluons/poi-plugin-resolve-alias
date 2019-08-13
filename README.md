@@ -33,12 +33,17 @@ yarn add --dev poi-plugin-resolve-alias
 Add this preset into your `poi.config.js` config file.
 
 ```javascript
+const aliases = {
+	'<my first alias>': '<my first resolve path>',
+	'<my other alias>': '<my other resolve path>'
+};
+
 module.exports = {
 	plugins: [
-		require('poi-plugin-resolve-alias')({
-			'<my first alias>': '<my first resolve path>',
-			'<my other alias>': '<my other resolve path>',
-		})
+		{
+			resolve: 'poi-plugin-resolve-alias',
+			options: aliases
+		}
 	]
 };
 ```
